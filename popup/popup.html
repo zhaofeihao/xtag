@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter User Notes</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="panel">
+        <div class="header">
+          <h1 class="title">User Notes</h1>
+          <div class="counter" id="noteCount">0 notes</div>
+        </div>
+
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Search by username or note..." />
+          <button id="exportBtn" class="button" title="Export all notes as JSON">Export</button>
+          <button id="importBtn" class="button" title="Import notes from JSON file">Import</button>
+        </div>
+
+        <div class="list" id="notesList"></div>
+
+        <div class="quick-add">
+          <div class="muted">Quick add</div>
+          <div class="quick-add__inputs">
+            <input id="newUsername" type="text" placeholder="@username" />
+            <textarea id="newNote" placeholder="Who? Why? What? When?"></textarea>
+          </div>
+          <button id="createBtn" class="primary">Save Note</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../dist/popup.js"></script>
+  </body>
+</html>

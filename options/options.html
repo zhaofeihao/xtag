@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter User Notes — Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Twitter User Notes — Options</h1>
+
+      <div class="card">
+        <h2>Storage preference</h2>
+        <label class="toggle">
+          <input type="checkbox" id="preferLocal" />
+          <span>Store notes locally only (skip Chrome sync)</span>
+        </label>
+        <p class="muted">Sync keeps notes across devices. Local keeps data on this browser only.</p>
+      </div>
+
+      <div class="card">
+        <h2>Data actions</h2>
+        <div class="actions">
+          <button id="export" class="primary">Export JSON</button>
+          <button id="import">Import JSON</button>
+          <button id="clear" class="danger">Clear everything</button>
+        </div>
+        <div id="stats"></div>
+      </div>
+    </div>
+    <div id="toast"></div>
+    <script type="module" src="../dist/options.js"></script>
+  </body>
+</html>

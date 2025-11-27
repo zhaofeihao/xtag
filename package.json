@@ -1,0 +1,13 @@
+{
+  "name": "twitter-user-notes",
+  "version": "0.1.0",
+  "description": "Chrome extension to add personal notes to Twitter/X users.",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.31",
+    "typescript": "^5.4.0"
+  }
+}

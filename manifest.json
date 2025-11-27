@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter User Notes",
+  "version": "0.1.0",
+  "description": "Add personal notes next to Twitter/X users and manage them from a popup.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://twitter.com/*",
+    "https://x.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["dist/content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Twitter User Notes",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "icons": {
+    "128": "icons/128.png"
+  }
+}
